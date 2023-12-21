@@ -1,10 +1,8 @@
-from typing import KeysView
 from webbrowser import Chrome
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 import pandas as pd
-import uuid
 import urllib
 from tqdm import tqdm
 import uuid
