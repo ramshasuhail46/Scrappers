@@ -69,7 +69,7 @@ for key in tqdm(models):
     pages_links(model_to_be_scrapped, web, total_pages)
     scrapper(page_urls)
    
-    my_dict = {'UUID':uids ,'Titles': titles,'Type': types, 'Description': descriptions, 'Urls': image_urls}
+    my_dict = {'UUID':uids ,'Title': titles,'Type': types, 'Description': descriptions, 'Url': image_urls}
     df_headlines = pd.DataFrame(my_dict)
     df_headlines.to_csv('3D-models-'+model_to_be_scrapped+'.csv')
 
